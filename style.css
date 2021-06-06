@@ -1,0 +1,477 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(224, 224, 224);
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 40px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 80px;
+    width: 135px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+.navbar .item{
+    font-family: 'Limelight', cursive;;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: rgb(235, 219, 219);
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(247, 217, 217);
+}
+
+#navbar ol li{ 
+    list-style: none;
+    font-size: 3rem;
+}
+
+#navbar ol li a{
+    color: rgb(230, 160, 69);
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 20px;
+    font-family: 'Limelight', cursive;
+    text-decoration: none;
+}
+
+.tabs{
+    width: 1400px;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#tabs ul li {
+    padding: 16px 9px;
+    border: 2px solid white;
+    background-color: rgb(144 6 127);
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+#tabs ul li a{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    text-decoration: none;
+    color: white;
+}
+
+#tabs ul li a:hover{
+    color: blue;
+    background-color: beige;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg3.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.5;
+}
+
+#home h1{
+    color: navy;
+    text-align: center;
+    font-family: 'Limelight', cursive;
+}
+
+#home p{
+    color: maroon;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Architects Daughter', cursive;
+}
+#home div p{
+    color: rgb(199, 18, 18);
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    z-index: -1;
+    /* opacity:1; */
+} 
+
+.book{
+    display: inline-block;
+    position: fixed;
+    left: 2px;
+    top: 175px;
+    background-color: rgb(236, 235, 235);
+    border-radius: 10px;
+}
+.book img{
+    width: 75px;
+    height: 50px;
+    animation-name: harry1;
+    animation-duration: 0.4s;
+    animation-iteration-count: 100000;
+}
+@keyframes harry1 {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 65px;
+    }
+}
+.book1{
+    /* display: inline-block; */
+    position: fixed;
+    right: 2px;
+    bottom: 85px;
+    border-radius: 10px;
+}
+.book1 img{
+    width: 35px;
+    height: 50px;
+}
+.book2{
+    display: inline-block;
+    position: fixed;
+    right: 2px;
+    bottom: 225px;
+    border-radius: 10px;
+}
+
+div p{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+div p{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+/* About Us Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    box-sizing: border-box;
+    background-color: rgb(134, 228, 125);
+    width: 100%;
+    height: 365px;
+}
+.box{
+    display: inline-block;
+    width: 440px;
+    height: 240px;
+    padding: 5px;
+}
+.background img{
+    margin: auto;
+    height: 255px;
+    width: 340px;
+    display: block;
+}
+#about h1{
+    color: blue;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#about p{
+    color: brown;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    display: inline-block;
+}
+
+/* Services Section */
+
+#services{
+    margin: 40px;
+    padding: 126px;
+    display: flex;
+    height: 0px;
+    width: 75%;
+    align-content: center;
+    align-items: center;
+    background: #b2d9e2;
+    border-radius: 20px;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 2px;
+    margin: 5px 5px;
+    border-radius: 22px;
+    margin-bottom: 10px;
+    height: 134px;
+    width: 205px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+#services .box:hover{
+    background-color: rgb(252, 204, 173);
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+
+#services .box img{ 
+   height: 70px;
+   margin: auto;
+   display: block;
+}
+
+/* Contact Section */
+
+.container4{
+    width: auto;
+    display: flex;
+    margin: 25px;
+    padding: 25px;
+}
+
+.jaynagar{
+    width: 750px;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    color: rgb(53, 19, 92);
+    margin: 24px;
+}
+.jaynagar p{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    color: red;
+}
+
+.vijaynagar{
+    width: 750px;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    color: rgb(53, 19, 92);
+    margin: 24px;
+}
+.vijaynagar p{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    color: red;
+}
+.address{
+    display: flex;
+    width: 650px;
+    padding: 10px;
+    margin: 10px;
+}
+.lock{
+    width: 20px;
+    height: 20px;;
+}
+
+#contact{
+    position: relative;
+    float: right;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1;
+    opacity: 0.5; */
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    margin: 20PX;
+    color: rgb(97, 6, 6);
+    background-color: rgb(194, 172, 172);
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.3rem;
+    z-index: 1;
+    opacity: 0.7;
+} 
+
+#contact-box form{
+    width: 85%;
+    height: 365px;
+    color: rgb(97, 6, 6);
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+footer{
+    background: rgb(74, 134, 131);
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.6rem;
+    color: blueviolet;
+    padding: 12px;
+    margin: 12px;
+    height: 28px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    padding: 12px;
+    color: navy;
+}
+.h-tertiary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    width: 0%;
+}
+.btn{
+    padding: 6px 15px;
+    border: 2px solid white;
+    background-color: rgb(206, 10, 10);
+    color: white;
+    margin: 5px;
+    font-size: 1.0rem;
+    border-radius: 15px;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.btn1{
+    padding: 2px 16px;
+    border: 2px solid white;
+    background-color: blueviolet;
+    color: white;
+    margin: 5px;
+    font-size: 1.0rem;
+    border-radius: 15px;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn1:hover{
+    transform: scale(1.2);
+}
+
+.btn3{
+    padding: 6px 15px;
+    border: 2px solid white;
+    background-color: rgb(230, 8, 100);
+    color: white;
+    margin: 5px;
+    font-size: 1.0rem;
+    border-radius: 15px;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn3:hover{
+    transform: scale(1.2);
+}
+
+.btn2{
+    padding: 4px 0px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    font-size: 1.0rem;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 10px;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
